@@ -81,7 +81,7 @@
   <li>使う目的は、お住まいの地域の<strong>最高気温・最低気温</strong>を調べ、漬け時間とかき混ぜの目安を今日の暑さ寒さに合わせることだけです</li>
   <li>取得する精度は「おおよその場所」です。端末に保存する際は<strong>小数第1位（およそ11km四方）に丸めて</strong>保存します</li>
   <li><strong>移動の履歴は一切保存しません</strong>。保存するのは最後に取得した1地点と気温だけです</li>
-  <li>天気の取得には Apple の WeatherKit、または取得できない場合の控えとしてノルウェー気象研究所（MET Norway）の公開APIを使用します。いずれの場合も、丸めた位置以外の情報は送りません。<strong>広告事業者には位置情報を渡していません</strong></li>
+  <li>天気の取得には、ノルウェー気象研究所（MET Norway）の公開APIを使用します。送るのは丸めた位置だけで、それ以外の情報は送りません。<strong>広告事業者には位置情報を渡していません</strong></li>
   <li>この機能をオフにすると、保存していた天気と地点は端末から削除されます</li>
 </ul>
 <p>許可・不許可は、iPhone の「設定」→「ぬか床日記」→「位置情報」からいつでも変更できます。</p>
@@ -132,7 +132,7 @@
   <li>It is used for one thing: to look up the <strong>high and low temperature</strong> where you are, so pickling times and stir reminders match today's weather</li>
   <li>Only an approximate location is requested. Before it is saved it is <strong>rounded to one decimal place (roughly 11 km)</strong></li>
   <li><strong>No movement history is stored.</strong> Only the most recent single point and its temperatures</li>
-  <li>Weather comes from Apple's WeatherKit, or from the Norwegian Meteorological Institute (MET Norway) public API as a fallback. Nothing beyond the rounded coordinate is sent. <strong>Your location is never given to the ad network</strong></li>
+  <li>Weather comes from the Norwegian Meteorological Institute (MET Norway) public API. Nothing beyond the rounded coordinate is sent. <strong>Your location is never given to the ad network</strong></li>
   <li>Turning the feature off deletes the saved weather and location from the device</li>
 </ul>
 <p>You can change the permission at any time in iPhone Settings → Nuka Diary → Location.</p>
