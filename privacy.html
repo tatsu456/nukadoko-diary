@@ -32,6 +32,13 @@
     background: rgba(140,110,60,.10); border-radius: 12px;
     padding: 14px 18px; margin: 18px 0; font-size: .95rem;
   }
+  .tablewrap { overflow-x: auto; margin: 18px 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 460px; font-size: .9rem; }
+  th, td {
+    border: 1px solid rgba(140,110,60,.28);
+    padding: 8px 10px; text-align: left; vertical-align: top;
+  }
+  th { background: rgba(140,110,60,.12); font-weight: 600; }
   footer { margin-top: 56px; text-align: center; color: #8a7f70; font-size: .85rem; }
 </style>
 </head>
@@ -51,7 +58,7 @@
 </div>
 
 <h2 id="ja">プライバシーポリシー（日本語）</h2>
-<p>最終更新日：2026年8月6日</p>
+<p>最終更新日：2026年8月16日</p>
 <p>「ぬか床日記」（以下、本アプリ）における個人情報の取り扱いについて、以下のとおり定めます。</p>
 
 <h3>1. 記録した内容の保存場所</h3>
@@ -65,7 +72,25 @@
   <li>端末の種類、OSのバージョン、おおよその地域</li>
   <li>広告の表示回数やタップ</li>
 </ul>
-<p>詳しくは <a href="https://policies.google.com/technologies/partner-sites">Google のポリシー</a> をご確認ください。</p>
+<p>App Store の製品ページに表示される「アプリのプライバシー」では、これらを次のように申告しています。収集・利用するのは開発者ではなく Google です。</p>
+<div class="tablewrap">
+<table>
+<thead>
+<tr><th>データ</th><th>利用目的</th><th>トラッキング</th></tr>
+</thead>
+<tbody>
+<tr><td>デバイスID</td><td>サードパーティ広告</td><td>あり</td></tr>
+<tr><td>広告データ</td><td>サードパーティ広告、アナリティクス</td><td>あり</td></tr>
+<tr><td>製品の操作</td><td>サードパーティ広告、アナリティクス</td><td>なし</td></tr>
+<tr><td>パフォーマンスデータ</td><td>アプリの機能、アナリティクス</td><td>なし</td></tr>
+<tr><td>クラッシュデータ</td><td>アプリの機能</td><td>なし</td></tr>
+<tr><td>おおよその場所</td><td>アプリの機能（天気の取得）</td><td>なし</td></tr>
+</tbody>
+</table>
+</div>
+<p>表の「おおよその場所」は第4節の天気の取得に使うもので、<strong>広告のために位置情報を渡してはいません</strong>。ただし広告SDKは、通信時の IP アドレスから大まかな地域を独自に推定する場合があります。これは座標の受け渡しとは別の経路です。</p>
+<p>「クラッシュデータ」「パフォーマンスデータ」は SDK の診断に使われるもので、開発者向けの解析ツール（Firebase Analytics、Crashlytics など）は<strong>組み込んでいません</strong>。</p>
+<p>詳しくは <a href="https://policies.google.com/technologies/partner-sites">Google のポリシー</a>、SDK が収集する内容については <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google の公式ドキュメント</a> をご確認ください。</p>
 <div class="note">
   <strong>追跡を許可しない場合</strong><br>
   初回起動時に表示される「トラッキングを許可しますか？」で「許可しない」を選んでも、<strong>本アプリのすべての機能をこれまでどおりお使いいただけます</strong>。表示される広告が、あなたの興味に合わせたものではなくなるだけです。<br>
@@ -102,7 +127,7 @@
 <p><a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub の Issues</a> からご連絡いただけます。</p>
 
 <h2 id="en">Privacy Policy (English)</h2>
-<p>Last updated: 6 August 2026</p>
+<p>Last updated: 16 August 2026</p>
 <p>This policy explains how Nuka Diary ("the app") handles your information.</p>
 
 <h3>1. Where your records live</h3>
@@ -116,7 +141,25 @@
   <li>device type, OS version, and approximate region</li>
   <li>how often ads were shown or tapped</li>
 </ul>
-<p>See <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a> for details.</p>
+<p>On the App Store product page, these are declared under "App Privacy" as follows. The collecting party is Google, not the developer.</p>
+<div class="tablewrap">
+<table>
+<thead>
+<tr><th>Data</th><th>Purpose</th><th>Used for tracking</th></tr>
+</thead>
+<tbody>
+<tr><td>Device ID</td><td>Third-Party Advertising</td><td>Yes</td></tr>
+<tr><td>Advertising Data</td><td>Third-Party Advertising, Analytics</td><td>Yes</td></tr>
+<tr><td>Product Interaction</td><td>Third-Party Advertising, Analytics</td><td>No</td></tr>
+<tr><td>Performance Data</td><td>App Functionality, Analytics</td><td>No</td></tr>
+<tr><td>Crash Data</td><td>App Functionality</td><td>No</td></tr>
+<tr><td>Coarse Location</td><td>App Functionality (weather)</td><td>No</td></tr>
+</tbody>
+</table>
+</div>
+<p>"Coarse Location" in the table is the weather lookup described in section 4. <strong>Your location is never handed to the ad network.</strong> The ad SDK may separately infer a rough region from your IP address, which is a different path from the coordinate itself.</p>
+<p>"Crash Data" and "Performance Data" are used to diagnose the SDK. No developer-facing analytics tools (Firebase Analytics, Crashlytics, and the like) are <strong>included in this app</strong>.</p>
+<p>See <a href="https://policies.google.com/technologies/partner-sites">Google's policy</a> for details, and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google's official documentation</a> for what the SDK collects.</p>
 <div class="note">
   <strong>If you don't allow tracking</strong><br>
   Choosing "Ask App Not to Track" on the first launch does not limit the app in any way. <strong>Every feature keeps working.</strong> The ads you see simply won't be tailored to you.<br>
