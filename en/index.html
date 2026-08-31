@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ぬか床日記｜ぬか漬けの記録とリマインダー</title>
-<meta name="description" content="かき混ぜたらワンタップで記録。不調は症状を選ぶと原因と手当ての手順が出ます。ぬか床のほか塩麹・味噌・甘酒など10種類の発酵食品に対応したiPhoneアプリです。">
+<title>Nuka Diary — a care log for nukadoko and other ferments</title>
+<meta name="description" content="Tap once when you stir. Pick the symptoms when something looks wrong and it shows the cause and a numbered fix. Ten ferment types, records kept on your iPhone only.">
 <link rel="alternate" hreflang="ja" href="https://tatsu456.github.io/nukadoko-diary/">
 <link rel="alternate" hreflang="en" href="https://tatsu456.github.io/nukadoko-diary/en/">
 <link rel="alternate" hreflang="x-default" href="https://tatsu456.github.io/nukadoko-diary/">
-<link rel="stylesheet" href="/assets/style.css?v=20260831b">
+<link rel="stylesheet" href="/assets/style.css?v=20260831c">
 </head>
 <body>
 
@@ -72,87 +72,81 @@
 </div>
 </header>
 
-<nav class="crumbs" aria-label="現在の位置">
-  <a href="/">ホーム</a>
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="/">Home</a>
   <span class="sep">›</span>
-  <span aria-current="page">ぬか床日記</span>
+  <a href="/nukadoko-diary/">Nuka Diary</a>
+  <span class="sep">›</span>
+  <span aria-current="page">English</span>
 </nav>
 
-<h1>ぬか床日記</h1>
-<p class="tagline">混ぜたかどうかを、覚えておかなくていい。</p>
-
 <p class="langswitch">
-  <span aria-current="true">日本語</span>
-  <a href="/nukadoko-diary/en/">English</a>
+  <a href="/nukadoko-diary/">日本語</a>
+  <span aria-current="true">English</span>
 </p>
+
+<h1>Nuka Diary</h1>
+<p class="tagline">Stop trying to remember whether you stirred it today.</p>
 
 <p class="appstore">
-  <a href="https://apps.apple.com/jp/app/id6798459101">App Store でダウンロード（無料）</a>
+  <a href="https://apps.apple.com/app/id6798459101">Download on the App Store (free)</a>
 </p>
 
 <p>
-ぬか床は、続けているうちに「今日は混ぜたっけ」が分からなくなります。
-そして調子が悪くなったとき、何が起きていて何をすればいいのかが分かりません。
-ぬか床日記は、その2つだけを引き受けるアプリです。
-<strong>世話の記録はワンタップ</strong>、
-<strong>不調は症状を選ぶと原因と手当てが出ます</strong>。
-ぬか床のほか、塩麹・味噌・甘酒・キムチ・ヨーグルトなど10種類の発酵食品を扱えます。
+A nukadoko needs stirring, and after a few weeks you stop being sure whether you did it.
+And when something goes wrong — a smell, a white film, too much liquid — it is not obvious
+what is happening or what to do. Nuka Diary handles those two things.
+<strong>Logging a stir is one tap</strong>, and
+<strong>picking the symptoms gives you the cause and the fix</strong>.
+It also tracks nine other ferments: shio koji, shoyu koji, miso, amazake, kimchi,
+sauerkraut, yoghurt, kombucha and umeboshi.
 </p>
 
-<h2>画面</h2>
+<h2>Screens</h2>
 
 <div class="shots">
-  <a href="shots/01.png"><img src="thumbs/01.jpg" alt="ホーム画面。次のかき混ぜまでの時間と、漬けた野菜の食べ頃が一目で分かる" loading="lazy" width="298" height="644"></a>
-  <a href="shots/02.png"><img src="thumbs/02.jpg" alt="当てはまる症状を選ぶだけ。におい・水分・味・見た目の4項目から選べる" loading="lazy" width="298" height="644"></a>
-  <a href="shots/03.png"><img src="thumbs/03.jpg" alt="選んだ症状に対して、原因と手当ての手順が番号付きで出る" loading="lazy" width="298" height="644"></a>
-  <a href="shots/04.png"><img src="thumbs/04.jpg" alt="きろく画面。連続日数とカレンダー、すべての世話の履歴が残る" loading="lazy" width="298" height="644"></a>
-  <a href="shots/05.png"><img src="thumbs/05.jpg" alt="ガイド。症状別の対処法と、野菜ごとの漬け時間を引ける" loading="lazy" width="298" height="644"></a>
+  <a href="shots/01.png"><img src="thumbs/01.jpg" alt="Home — time until the next stir, and which vegetables are ready" loading="lazy" width="298" height="644"></a>
+  <a href="shots/02.png"><img src="thumbs/02.jpg" alt="Pick the symptoms — smell, moisture, taste and appearance" loading="lazy" width="298" height="644"></a>
+  <a href="shots/03.png"><img src="thumbs/03.jpg" alt="The cause and a numbered fix for what you picked" loading="lazy" width="298" height="644"></a>
+  <a href="shots/04.png"><img src="thumbs/04.jpg" alt="Log — streak, calendar and the full history of care" loading="lazy" width="298" height="644"></a>
+  <a href="shots/05.png"><img src="thumbs/05.jpg" alt="Guide — fixes by symptom, and pickling times by vegetable" loading="lazy" width="298" height="644"></a>
 </div>
 
-<h2>できること</h2>
+<h2>What it does</h2>
 
 <ul>
-  <li><strong>世話の記録</strong>──かき混ぜたらワンタップ。次にやる時期が出て、続けた日数が積み上がります</li>
-  <li><strong>症状から診断</strong>──におい・水分・味・見た目を選ぶと、<strong>原因と番号付きの手当ての手順</strong>が出ます</li>
-  <li><strong>漬け頃を知らせる</strong>──野菜ごとの漬け時間の目安があり、<strong>季節と保管場所（常温・冷暗所・冷蔵庫）に応じて変わります</strong></li>
-  <li><strong>10種類の発酵食品</strong>──ぬか床・塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干し</li>
-  <li><strong>写真とメモ</strong>──様子を写真で残せます。写真は端末内だけに保存されます</li>
-  <li><strong>iCloud同期</strong>──有効にすると、ご自身のiCloud内で端末間の記録を同期できます</li>
+  <li><strong>One-tap care log</strong> — tap when you stir. It shows when the next one is due and counts the days you have kept it up</li>
+  <li><strong>Diagnose by symptom</strong> — choose what you notice from smell, moisture, taste and appearance, and get the cause with a numbered set of steps</li>
+  <li><strong>Pickling times</strong> — a guide time per vegetable, adjusted for the season and where you keep the crock (room temperature, a cool place, or the fridge)</li>
+  <li><strong>Ten ferment types</strong> — not just nukadoko</li>
+  <li><strong>Photos and notes</strong> — photos stay on the device and are not synced</li>
+  <li><strong>iCloud sync</strong> — optional, within your own iCloud account</li>
 </ul>
 
-<h2>データの扱い</h2>
+<h2>Privacy</h2>
 
 <p>
-記録は<strong>お使いのiPhoneの中だけ</strong>に保存され、開発者が見ることはできません。
-アカウント登録もサインインも要りません。
-天気から漬け頃を見積もるため、<strong>小数第2位に丸めた緯度経度（約1km四方）</strong>を
-MET Norway（<code>api.met.no</code>）へ送ります。問い合わせは最短3時間おきです。
-詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+Your records are stored <strong>on your iPhone only</strong> and the developer cannot see them.
+There is no account and no sign-in. To estimate pickling times from the weather, the app sends
+<strong>coordinates rounded to two decimal places (roughly 1&nbsp;km)</strong> to
+MET Norway (<code>api.met.no</code>), at most once every three hours.
+See the <a href="../privacy.html">privacy policy</a> for details.
 </p>
 
-<h2>広告について</h2>
+<h2>Ads</h2>
 
 <p>
-無料でお使いいただけます。広告が表示されますが、
-アプリ内の「設定」→「広告を消す」から週額プランに登録すると非表示にできます。
-解約はiPhoneの「設定」→ ご自身の名前 →「サブスクリプション」からいつでも行えます。
+The app is free and shows ads. You can hide them with a weekly subscription from
+Settings → Remove ads in the app. Cancel any time from iPhone Settings → your name → Subscriptions.
 </p>
 
-<h2>お問い合わせ</h2>
+<h2>Support</h2>
 
 <p>
-ご質問・ご要望・不具合のご報告は
-<a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub の Issues</a>
-からお寄せください。GitHubのアカウントがあればどなたでも投稿できます。
+For questions, requests, or bug reports, please open an issue on
+<a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub Issues</a>.
+Anyone with a GitHub account can post.
 </p>
-
-<h2>English</h2>
-
-<p>
-An English version of this page is available at
-<a href="/nukadoko-diary/en/">tatsu456.github.io/nukadoko-diary/en/</a>.
-</p>
-
 <footer class="sitefooter">
 <div class="sitefooter-inner">
   <div>
