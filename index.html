@@ -3,98 +3,219 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ぬか床日記 / Nuka Diary — サポート / Support</title>
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif;
-    line-height: 1.85; margin: 0; padding: 0 20px 80px;
-    background: #faf6ee; color: #2b2620;
-  }
-  @media (prefers-color-scheme: dark) { body { background: #16130f; color: #ece5da; } }
-  .wrap { max-width: 720px; margin: 0 auto; }
-  header { padding: 56px 0 8px; text-align: center; }
-  header .emoji { font-size: 60px; }
-  h1 { font-size: 1.7rem; margin: 14px 0 6px; }
-  .sub { color: #8a7f70; margin: 0; }
-  h2 { font-size: 1.15rem; margin-top: 44px; padding-top: 18px; border-top: 1px solid rgba(140,110,60,.25); }
-  h3 { font-size: 1rem; margin-top: 26px; }
-  a { color: #8a5a20; }
-  @media (prefers-color-scheme: dark) { a { color: #d6a469; } }
-  .cta {
-    display: inline-block; margin: 8px 6px 0; padding: 11px 22px;
-    border-radius: 999px; background: #6b4a2a; color: #fff;
-    text-decoration: none; font-weight: 600;
-  }
-  .qa { background: rgba(140,110,60,.10); border-radius: 12px; padding: 4px 20px; margin: 16px 0; }
-  footer { margin-top: 56px; text-align: center; color: #8a7f70; font-size: .85rem; }
-</style>
+<title>ぬか床日記｜ぬか漬けの記録とリマインダー</title>
+<meta name="description" content="かき混ぜたらワンタップで記録。不調は症状を選ぶと原因と手当ての手順が出ます。ぬか床のほか塩麹・味噌・甘酒など10種類の発酵食品に対応したiPhoneアプリです。">
+<link rel="stylesheet" href="/assets/style.css?v=20260831b">
 </head>
 <body>
-<div class="wrap">
 
-<header>
-  <div class="emoji">🥒</div>
-  <h1>ぬか床日記 / Nuka Diary</h1>
-  <p class="sub">ぬか床と発酵食品の世話記録<br>A care log for nukadoko and other ferments</p>
-  <p style="margin-top:22px">
-    <a class="cta" href="https://github.com/tatsu456/nukadoko-diary/issues">お問い合わせ / Contact</a>
-    <a class="cta" href="./privacy.html">プライバシーポリシー / Privacy</a>
-  </p>
+<header class="masthead">
+<div class="masthead-inner">
+  <a class="brand" href="/">tatsu456</a>
+  <nav class="mainnav" aria-label="サイト内メニュー">
+    <a href="/">ホーム</a>
+    <details class="menu" data-current>
+      <summary>アプリ</summary>
+      <div class="menu-panel">
+      <a href="/counter1234/">Counter1234<small>カウンターと記録</small></a>
+      <a href="/kondate/">献立メーカー_EX<small>晩ごはんの献立</small></a>
+      <a href="/splitbill/">SplitBill_EX<small>多通貨の割り勘</small></a>
+      <a href="/nukadoko-diary/" aria-current="page">ぬか床日記<small>混ぜたか覚えておかなくていい</small></a>
+      <a href="/yamajitaku/">山じたく<small>登山の持ち物チェックリスト</small></a>
+      <a href="/reitou/">冷凍図鑑<small>切り方から解凍まで</small></a>
+      </div>
+    </details>
+    <details class="menu">
+      <summary>暮らしの手引き</summary>
+      <div class="menu-panel">
+        <a href="/guides/">記事の一覧</a>
+        <p class="grp">冷凍保存</p>
+      <a href="/guides/freezing-basics.html">冷凍に向く食材・向かない食材の分かれ目</a>
+      <a href="/guides/freezing-vegetables.html">野菜の冷凍・解凍 早見表</a>
+      <a href="/guides/freezing-meat.html">肉の冷凍と解凍</a>
+      <a href="/guides/freezing-seafood.html">魚介の冷凍と解凍</a>
+      <a href="/guides/freezing-staples.html">ごはん・パン・麺の冷凍</a>
+      <a href="/guides/freezing-dishes.html">作りおきと料理の冷凍</a>
+      <a href="/guides/freezer-care.html">冷凍焼けを防ぐ、冷凍庫の使い方</a>
+        <p class="grp">ぬか床</p>
+      <a href="/guides/nukadoko-troubleshooting.html">ぬか床の症状別・原因と手当て</a>
+      <a href="/guides/nukazuke-timing.html">ぬか漬けの漬け時間は、野菜と季節で変わる</a>
+        <p class="grp">登山</p>
+      <a href="/guides/hiking-gear-by-altitude.html">標高と季節で変わる登山の持ち物</a>
+      <a href="/guides/pack-weight.html">ザックの重さは体重の何％まで</a>
+        <p class="grp">くらしの段取り</p>
+      <a href="/guides/meal-planning.html">献立が決まらないときに、何から決めるか</a>
+      <a href="/guides/splitting-bills.html">割り勘の計算は、足す順序で金額が変わる</a>
+      <a href="/guides/counting-situations.html">数え間違いが起きる場面と、その防ぎ方</a>
+      </div>
+    </details>
+    <details class="menu">
+      <summary>サポート</summary>
+      <div class="menu-panel">
+        <a href="/#contact">お問い合わせ</a>
+        <hr>
+        <p class="grp">プライバシーポリシー</p>
+      <a href="/privacy-policy.html">献立メーカー_EX</a>
+      <a href="/counter1234/privacy.html">Counter1234</a>
+      <a href="/splitbill/privacy.html">SplitBill_EX</a>
+      <a href="/nukadoko-diary/privacy.html">ぬか床日記</a>
+      <a href="/yamajitaku/privacy.html">山じたく</a>
+      <a href="/reitou/privacy.html">冷凍図鑑</a>
+        <hr>
+        <a href="/reitou/terms.html">利用規約（冷凍図鑑）</a>
+      </div>
+    </details>
+  </nav>
+</div>
 </header>
 
-<h2>サポート（日本語）</h2>
-<p>ご質問・ご要望・不具合のご報告は、<a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub の Issues</a> からお寄せください。GitHubのアカウントがあればどなたでも投稿できます。</p>
+<nav class="crumbs" aria-label="現在の位置">
+  <a href="/">ホーム</a>
+  <span class="sep">›</span>
+  <span aria-current="page">ぬか床日記</span>
+</nav>
 
-<h3>よくある質問</h3>
+<h1>ぬか床日記</h1>
+<p class="tagline">混ぜたかどうかを、覚えておかなくていい。</p>
 
-<div class="qa">
-  <h3>記録したデータはどこに保存されますか？</h3>
-  <p>お使いのiPhoneの中だけです。開発者が見ることはできません。iCloud同期を有効にすると、あなた自身のiCloud内で端末間の同期ができます。</p>
+<p class="appstore">
+  <a href="https://apps.apple.com/jp/app/id6798459101">App Store でダウンロード（無料）</a>
+</p>
+
+<p>
+ぬか床は、続けているうちに「今日は混ぜたっけ」が分からなくなります。
+そして調子が悪くなったとき、何が起きていて何をすればいいのかが分かりません。
+ぬか床日記は、その2つだけを引き受けるアプリです。
+<strong>世話の記録はワンタップ</strong>、
+<strong>不調は症状を選ぶと原因と手当てが出ます</strong>。
+ぬか床のほか、塩麹・味噌・甘酒・キムチ・ヨーグルトなど10種類の発酵食品を扱えます。
+</p>
+
+<h2>画面</h2>
+
+<div class="shots">
+  <a href="shots/01.png"><img src="thumbs/01.jpg" alt="ホーム画面。次のかき混ぜまでの時間と、漬けた野菜の食べ頃が一目で分かる" loading="lazy" width="298" height="644"></a>
+  <a href="shots/02.png"><img src="thumbs/02.jpg" alt="当てはまる症状を選ぶだけ。におい・水分・味・見た目の4項目から選べる" loading="lazy" width="298" height="644"></a>
+  <a href="shots/03.png"><img src="thumbs/03.jpg" alt="選んだ症状に対して、原因と手当ての手順が番号付きで出る" loading="lazy" width="298" height="644"></a>
+  <a href="shots/04.png"><img src="thumbs/04.jpg" alt="きろく画面。連続日数とカレンダー、すべての世話の履歴が残る" loading="lazy" width="298" height="644"></a>
+  <a href="shots/05.png"><img src="thumbs/05.jpg" alt="ガイド。症状別の対処法と、野菜ごとの漬け時間を引ける" loading="lazy" width="298" height="644"></a>
 </div>
 
-<div class="qa">
-  <h3>広告を消したいのですが</h3>
-  <p>アプリの「設定」→「広告を消す」から、週額プランにご登録いただけます。解約はiPhoneの「設定」→ ご自身の名前 →「サブスクリプション」からいつでも行えます。</p>
-</div>
+<h2>できること</h2>
 
-<div class="qa">
-  <h3>機種変更したら記録は引き継げますか？</h3>
-  <p>iCloud同期が有効なら引き継げます。ただし写真は同期の対象外で、端末内にのみ保存されます。</p>
-</div>
+<ul>
+  <li><strong>世話の記録</strong>──かき混ぜたらワンタップ。次にやる時期が出て、続けた日数が積み上がります</li>
+  <li><strong>症状から診断</strong>──におい・水分・味・見た目を選ぶと、<strong>原因と番号付きの手当ての手順</strong>が出ます</li>
+  <li><strong>漬け頃を知らせる</strong>──野菜ごとの漬け時間の目安があり、<strong>季節と保管場所（常温・冷暗所・冷蔵庫）に応じて変わります</strong></li>
+  <li><strong>10種類の発酵食品</strong>──ぬか床・塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干し</li>
+  <li><strong>写真とメモ</strong>──様子を写真で残せます。写真は端末内だけに保存されます</li>
+  <li><strong>iCloud同期</strong>──有効にすると、ご自身のiCloud内で端末間の記録を同期できます</li>
+</ul>
 
-<div class="qa">
-  <h3>通知が来ません</h3>
-  <p>iPhoneの「設定」→「ぬか床日記」→「通知」で許可されているかご確認ください。アプリ内の「設定」からも状態を確認できます。</p>
-</div>
+<h2>データの扱い</h2>
+
+<p>
+記録は<strong>お使いのiPhoneの中だけ</strong>に保存され、開発者が見ることはできません。
+アカウント登録もサインインも要りません。
+天気から漬け頃を見積もるため、<strong>小数第2位に丸めた緯度経度（約1km四方）</strong>を
+MET Norway（<code>api.met.no</code>）へ送ります。問い合わせは最短3時間おきです。
+詳しくは<a href="./privacy.html">プライバシーポリシー</a>をご覧ください。
+</p>
+
+<h2>広告について</h2>
+
+<p>
+無料でお使いいただけます。広告が表示されますが、
+アプリ内の「設定」→「広告を消す」から週額プランに登録すると非表示にできます。
+解約はiPhoneの「設定」→ ご自身の名前 →「サブスクリプション」からいつでも行えます。
+</p>
+
+<h2>お問い合わせ</h2>
+
+<p>
+ご質問・ご要望・不具合のご報告は
+<a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub の Issues</a>
+からお寄せください。GitHubのアカウントがあればどなたでも投稿できます。
+</p>
 
 <h2>Support (English)</h2>
-<p>For questions, requests, or bug reports, please open an issue on <a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub Issues</a>. Anyone with a GitHub account can post.</p>
 
-<h3>FAQ</h3>
+<p>
+<strong>Nuka Diary</strong> is a care log for nukadoko and other ferments.
+Tap once when you stir; pick the symptoms when something looks wrong and it shows
+the cause and step-by-step fix. Ten ferment types are supported.
+Your records stay on your iPhone and the developer cannot see them.
+For weather-based pickling estimates the app sends coordinates rounded to two decimal
+places (about 1&nbsp;km) to MET Norway (<code>api.met.no</code>), at most every three hours.
+</p>
 
-<div class="qa">
-  <h3>Where is my data stored?</h3>
-  <p>Only on your iPhone. The developer cannot see it. If you enable iCloud sync, records sync within your own iCloud account across your devices.</p>
+<p>
+For questions, requests, or bug reports, please open an issue on
+<a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub Issues</a>.
+See the <a href="./privacy.html">privacy policy</a> for details.
+</p>
+
+<footer class="sitefooter">
+<div class="sitefooter-inner">
+  <div>
+    <h2>アプリ</h2>
+    <ul>
+      <li><a href="/counter1234/">Counter1234</a></li>
+      <li><a href="/kondate/">献立メーカー_EX</a></li>
+      <li><a href="/splitbill/">SplitBill_EX</a></li>
+      <li><a href="/nukadoko-diary/">ぬか床日記</a></li>
+      <li><a href="/yamajitaku/">山じたく</a></li>
+      <li><a href="/reitou/">冷凍図鑑</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>暮らしの手引き</h2>
+    <ul>
+      <li><a href="/guides/">記事の一覧</a></li>
+      <li><a href="/guides/freezing-basics.html">冷凍に向く食材・向かない食材の分かれ目</a></li>
+      <li><a href="/guides/freezing-vegetables.html">野菜の冷凍・解凍 早見表</a></li>
+      <li><a href="/guides/freezing-meat.html">肉の冷凍と解凍</a></li>
+      <li><a href="/guides/freezing-seafood.html">魚介の冷凍と解凍</a></li>
+      <li><a href="/guides/freezing-staples.html">ごはん・パン・麺の冷凍</a></li>
+      <li><a href="/guides/freezing-dishes.html">作りおきと料理の冷凍</a></li>
+      <li><a href="/guides/freezer-care.html">冷凍焼けを防ぐ、冷凍庫の使い方</a></li>
+      <li><a href="/guides/nukadoko-troubleshooting.html">ぬか床の症状別・原因と手当て</a></li>
+      <li><a href="/guides/nukazuke-timing.html">ぬか漬けの漬け時間は、野菜と季節で変わる</a></li>
+      <li><a href="/guides/hiking-gear-by-altitude.html">標高と季節で変わる登山の持ち物</a></li>
+      <li><a href="/guides/pack-weight.html">ザックの重さは体重の何％まで</a></li>
+      <li><a href="/guides/meal-planning.html">献立が決まらないときに、何から決めるか</a></li>
+      <li><a href="/guides/splitting-bills.html">割り勘の計算は、足す順序で金額が変わる</a></li>
+      <li><a href="/guides/counting-situations.html">数え間違いが起きる場面と、その防ぎ方</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>サポート</h2>
+    <ul>
+      <li><a href="/#contact">お問い合わせ</a></li>
+      <li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
+      <li><a href="/reitou/terms.html">利用規約（冷凍図鑑）</a></li>
+    </ul>
+  </div>
+  <div class="copy">© 2026 tatsu456　iOSアプリを作っています。</div>
 </div>
+</footer>
 
-<div class="qa">
-  <h3>How do I remove the ads?</h3>
-  <p>Go to Settings → Remove ads in the app to subscribe to the weekly plan. You can cancel any time from iPhone Settings → your name → Subscriptions.</p>
-</div>
+<script>
+(function () {
+  var menus = Array.prototype.slice.call(document.querySelectorAll('.masthead .menu'));
+  menus.forEach(function (m) {
+    m.addEventListener('toggle', function () {
+      if (m.open) menus.forEach(function (o) { if (o !== m) o.open = false; });
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.masthead .menu')) menus.forEach(function (m) { m.open = false; });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') menus.forEach(function (m) { m.open = false; });
+  });
+})();
+</script>
 
-<div class="qa">
-  <h3>Will my records move to a new phone?</h3>
-  <p>Yes, if iCloud sync is on. Photos are not synced and stay on the device.</p>
-</div>
-
-<div class="qa">
-  <h3>I'm not getting notifications</h3>
-  <p>Check iPhone Settings → Nuka Diary → Notifications. You can also see the status inside the app under Settings.</p>
-</div>
-
-<footer>© 2026 Takayuki Takemoto</footer>
-</div>
 </body>
 </html>
