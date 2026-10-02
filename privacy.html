@@ -123,13 +123,15 @@
   <span class="sep">›</span>
   <span aria-current="page">プライバシーポリシー</span>
 </nav>
+
+
 <h1>プライバシーポリシー</h1>
-<p class="tagline">ぬか床日記（iOS）／最終更新 2026年8月16日</p>
+<p class="tagline">ぬか床日記（iOS）／最終更新 2026年10月2日</p>
 <p>このページには、日本語のあとに<a href="#en" lang="en">英語版（English）</a>も載せています。
 英語だけのページは <a href="en/privacy.html" lang="en" hreflang="en">Privacy Policy (English)</a> です。</p>
 
 <h2 id="ja">プライバシーポリシー（日本語）</h2>
-<p>最終更新日：2026年8月16日</p>
+<p>最終更新日：2026年10月2日</p>
 <p>「ぬか床日記」（以下、本アプリ）における個人情報の取り扱いについて、以下のとおり定めます。</p>
 
 <h3>1. 記録した内容の保存場所</h3>
@@ -177,7 +179,8 @@
   <li>使う目的は、お住まいの地域の<strong>最高気温・最低気温</strong>を調べ、漬け時間とかき混ぜの目安を今日の暑さ寒さに合わせることだけです</li>
   <li>取得する精度は「おおよその場所」です。端末に保存する際は<strong>小数第1位（およそ11km四方）に丸めて</strong>保存します</li>
   <li><strong>移動の履歴は一切保存しません</strong>。保存するのは最後に取得した1地点と気温だけです</li>
-  <li>天気の取得には、ノルウェー気象研究所（MET Norway）の公開APIを使用します。送るのは丸めた位置だけで、それ以外の情報は送りません。<strong>広告事業者には位置情報を渡していません</strong></li>
+  <li>天気の取得には、ノルウェー気象研究所（MET Norway）の公開APIを使用します。送るのは<strong>小数第2位（およそ1km四方）に丸めた緯度経度</strong>だけで、それ以外の情報は送りません。問い合わせは最短3時間おきです。<strong>広告事業者には位置情報を渡していません</strong></li>
+  <li>画面に地名（「さいたま市」など）を出すため、おおよその位置を iOS 標準の地名検索（Apple の CLGeocoder）に問い合わせます。返ってきた地名は、保存する1地点といっしょに端末に置きます</li>
   <li>この機能をオフにすると、保存していた天気と地点は端末から削除されます</li>
 </ul>
 <p>許可・不許可は、iPhone の「設定」→「ぬか床日記」→「位置情報」からいつでも変更できます。</p>
@@ -198,7 +201,7 @@
 <p><a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub の Issues</a> からご連絡いただけます。</p>
 
 <h2 id="en">Privacy Policy (English)</h2>
-<p>Last updated: 16 August 2026</p>
+<p>Last updated: 2 October 2026</p>
 <p>This policy explains how Nuka Diary ("the app") handles your information.</p>
 
 <h3>1. Where your records live</h3>
@@ -246,7 +249,8 @@
   <li>It is used for one thing: to look up the <strong>high and low temperature</strong> where you are, so pickling times and stir reminders match today's weather</li>
   <li>Only an approximate location is requested. Before it is saved it is <strong>rounded to one decimal place (roughly 11 km)</strong></li>
   <li><strong>No movement history is stored.</strong> Only the most recent single point and its temperatures</li>
-  <li>Weather comes from the Norwegian Meteorological Institute (MET Norway) public API. Nothing beyond the rounded coordinate is sent. <strong>Your location is never given to the ad network</strong></li>
+  <li>Weather comes from the Norwegian Meteorological Institute (MET Norway) public API. Only the latitude and longitude <strong>rounded to two decimal places (roughly 1 km)</strong> are sent, nothing else, at most once every three hours. <strong>Your location is never given to the ad network</strong></li>
+  <li>To show a place name (such as "Saitama"), the approximate location is looked up with iOS's built-in place-name lookup (Apple's CLGeocoder). The place name is kept on the device together with the single saved point</li>
   <li>Turning the feature off deletes the saved weather and location from the device</li>
 </ul>
 <p>You can change the permission at any time in iPhone Settings → Nuka Diary → Location.</p>
@@ -265,6 +269,7 @@
 
 <h3>9. Contact</h3>
 <p>You can reach us through <a href="https://github.com/tatsu456/nukadoko-diary/issues">GitHub Issues</a>.</p>
+
 
 <footer class="sitefooter">
 <div class="sitefooter-inner">

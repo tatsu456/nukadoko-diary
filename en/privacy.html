@@ -71,7 +71,7 @@
 
 
 <h1>Privacy Policy</h1>
-<p class="tagline">Nuka Diary (iOS) / Last updated August 16, 2026</p>
+<p class="tagline">Nuka Diary (iOS) / Last updated October 2, 2026</p>
 
 <p class="note">This is an English translation of the <a href="../privacy.html" hreflang="ja">Japanese privacy policy</a>. If the two differ, the Japanese version prevails.</p>
 
@@ -122,7 +122,8 @@
   <li>It is used for one thing only: to look up the <strong>high and low temperature</strong> where you live, so the guides for pickling times and stirring match how hot or cold it is today</li>
   <li>Only an approximate location is requested. When it is saved on the device, it is <strong>rounded to one decimal place (roughly an 11 km square)</strong></li>
   <li><strong>No movement history is stored at all.</strong> Only the most recent single point and its temperatures are kept</li>
-  <li>Weather comes from the public API of the Norwegian Meteorological Institute (MET Norway). Only the rounded location is sent, and nothing else. <strong>Your location is never given to advertising companies</strong></li>
+  <li>Weather comes from the public API of the Norwegian Meteorological Institute (MET Norway). Only the latitude and longitude <strong>rounded to two decimal places (roughly a 1 km square)</strong> are sent, and nothing else, at most once every three hours. <strong>Your location is never given to advertising companies</strong></li>
+  <li>To show a place name (such as "Saitama"), the approximate location is looked up with iOS's built-in place-name lookup (Apple's CLGeocoder). The place name is kept on the device together with the single saved point</li>
   <li>Turning the feature off deletes the saved weather and location from the device</li>
 </ul>
 <p>You can allow or disallow location access at any time in iPhone Settings → Nuka Diary → Location.</p>
