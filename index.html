@@ -12,11 +12,19 @@
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ぬか床日記｜ぬか漬けの記録とリマインダー</title>
-<meta name="description" content="かき混ぜたらワンタップで記録。不調は症状を選ぶと原因と手当ての手順が出ます。ぬか床のほか塩麹・味噌・甘酒など10種類の発酵食品に対応したiPhoneアプリです。">
+<meta name="description" content="かき混ぜたらワンタップで記録。不調は症状を選ぶと原因と手当ての手順が出ます。ぬか床・塩麹・味噌・甘酒など10種類の発酵食品に対応したiPhoneアプリです。">
 <link rel="alternate" hreflang="ja" href="https://tatsu456.github.io/nukadoko-diary/">
 <link rel="alternate" hreflang="en" href="https://tatsu456.github.io/nukadoko-diary/en/">
 <link rel="alternate" hreflang="x-default" href="https://tatsu456.github.io/nukadoko-diary/">
-<link rel="stylesheet" href="/assets/style.css?v=20261002a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="tatsu456">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:url" content="https://tatsu456.github.io/nukadoko-diary/">
+<meta property="og:title" content="ぬか床日記｜ぬか漬けの記録とリマインダー">
+<meta property="og:description" content="かき混ぜたらワンタップで記録。不調は症状を選ぶと原因と手当ての手順が出ます。ぬか床・塩麹・味噌・甘酒など10種類の発酵食品に対応したiPhoneアプリです。">
+<meta property="og:image" content="https://tatsu456.github.io/assets/icon-nukadoko.png">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/assets/style.css?v=12234de5d0">
 </head>
 <body>
 
@@ -118,7 +126,7 @@
 
 <nav class="crumbs" aria-label="現在の位置">
   <a href="/">ホーム</a>
-  <span class="sep">›</span>
+  <span class="sep" aria-hidden="true">›</span>
   <span aria-current="page">ぬか床日記</span>
 </nav>
 
@@ -137,7 +145,7 @@
 ぬか床日記は、その2つだけを引き受けるアプリです。
 <strong>世話の記録はワンタップ</strong>、
 <strong>不調は症状を選ぶと原因と手当てが出ます</strong>。
-ぬか床のほか、塩麹・味噌・甘酒・キムチ・ヨーグルトなど10種類の発酵食品を扱えます。
+ぬか床を含む10種類の発酵食品（塩麹・味噌・甘酒・キムチ・ヨーグルトなど）に対応し、それ以外も「その他」で記録できます。
 </p>
 
 <h2>画面</h2>
@@ -156,7 +164,7 @@
   <li><strong>世話の記録</strong>──かき混ぜたらワンタップ。次にやる時期が出て、続けた日数が積み上がります</li>
   <li><strong>症状から診断</strong>──におい・水分・味・見た目を選ぶと、<strong>原因と番号付きの手当ての手順</strong>が出ます</li>
   <li><strong>漬け頃を知らせる</strong>──野菜ごとの漬け時間の目安があり、<strong>季節と保管場所（常温・冷暗所・冷蔵庫）に応じて変わります</strong></li>
-  <li><strong>10種類の発酵食品</strong>──ぬか床・塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干し</li>
+  <li><strong>10種類の発酵食品</strong>──ぬか床・塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干し（ほかは「その他」で）</li>
   <li><strong>写真とメモ</strong>──様子を写真で残せます。写真は端末内だけに保存されます</li>
   <li><strong>iCloud同期</strong>──有効にすると、ご自身のiCloud内で端末間の記録を同期できます</li>
 </ul>
@@ -164,7 +172,7 @@
 <h2>データの扱い</h2>
 
 <p>
-記録は<strong>お使いのiPhoneの中だけ</strong>に保存され、開発者が見ることはできません。
+記録は<strong>お使いのiPhoneの中</strong>（iCloud同期を有効にしている場合は、ご自身のiCloudにも）に保存され、開発者が見ることはできません。
 アカウント登録もサインインも要りません。
 「今日の気温にあわせる」を<strong>オンにしたときだけ</strong>（初期状態はオフ）、天気から漬け頃を見積もるため、<strong>小数第2位に丸めた緯度経度（約1km四方）</strong>を
 MET Norway（<code>api.met.no</code>）へ送ります。問い合わせは最短3時間おきです。
@@ -187,9 +195,9 @@ MET Norway（<code>api.met.no</code>）へ送ります。問い合わせは最�
 からお寄せください。GitHubのアカウントがあればどなたでも投稿できます。
 </p>
 
-<h2>English</h2>
+<h2 lang="en">English</h2>
 
-<p>
+<p lang="en">
 An English version of this page is available at
 <a href="/nukadoko-diary/en/">tatsu456.github.io/nukadoko-diary/en/</a>.
 </p>
@@ -208,6 +216,26 @@ An English version of this page is available at
       <li><a href="/nukadoko-diary/">ぬか床日記</a></li>
       <li><a href="/splitbill/">SplitBill_EX</a></li>
       <li><a href="/counter1234/">Counter1234</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>プライバシーポリシー</h2>
+    <ul>
+      <li><a href="/yamajitaku/privacy.html">山じたく</a></li>
+      <li><a href="/albumdiet/privacy.html">アルバムダイエット</a></li>
+      <li><a href="/ablooplay/privacy.html">ABループレイ</a></li>
+      <li><a href="/privacy-policy.html">献立メーカー_EX</a></li>
+      <li><a href="/reitou/privacy.html">冷凍図鑑</a></li>
+      <li><a href="/nukadoko-diary/privacy.html">ぬか床日記</a></li>
+      <li><a href="/splitbill/privacy.html">SplitBill_EX</a></li>
+      <li><a href="/counter1234/privacy.html">Counter1234</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2>サポート</h2>
+    <ul>
+      <li><a href="/#contact">お問い合わせ</a></li>
+      <li><a href="/reitou/terms.html">利用規約（冷凍図鑑）</a></li>
     </ul>
   </div>
   <div>
@@ -241,15 +269,7 @@ An English version of this page is available at
       <li><a href="/guides/iphone-storage.html">iPhone の容量がいっぱいになったら、何から片付けるか</a></li>
     </ul>
   </div>
-  <div>
-    <h2>サポート</h2>
-    <ul>
-      <li><a href="/#contact">お問い合わせ</a></li>
-      <li><a href="/privacy-policy.html">プライバシーポリシー</a></li>
-      <li><a href="/reitou/terms.html">利用規約（冷凍図鑑）</a></li>
-    </ul>
-  </div>
-  <div class="copy">© 2026 tatsu456　アプリを作っています。</div>
+  <div class="copy">© 2026 tatsu456</div>
 </div>
 </footer>
 

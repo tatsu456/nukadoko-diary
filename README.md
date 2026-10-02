@@ -16,6 +16,7 @@ GitHub Pages で公開していて、アプリの説明・プライバシーポ�
 | [ぬか床日記](https://tatsu456.github.io/nukadoko-diary/) | アプリの紹介（日本語） |
 | [Nuka Diary](https://tatsu456.github.io/nukadoko-diary/en/) | アプリの紹介（English） |
 | [プライバシーポリシー / Privacy Policy](https://tatsu456.github.io/nukadoko-diary/privacy.html) | データの扱い（日英） |
+| [Privacy Policy (English)](https://tatsu456.github.io/nukadoko-diary/en/privacy.html) | データの扱い（English） |
 
 ## アプリについて
 
@@ -24,10 +25,10 @@ GitHub Pages で公開していて、アプリの説明・プライバシーポ�
 このアプリは、その2つだけを引き受けます。
 
 世話の記録はワンタップ。不調は症状を選ぶと、原因と番号付きの手当ての手順が出ます。
-ぬか床のほか、塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干しの
-10種類の発酵食品を扱えます。
+ぬか床を含む10種類の発酵食品（塩麹・醤油麹・味噌・甘酒・キムチ・ザワークラウト・ヨーグルト・コンブチャ・梅干し）を扱え、
+それ以外も「その他」で記録できます。
 
-記録はお使いの iPhone の中だけに保存され、開発者が見ることはできません。
+記録はお使いの端末の中（iCloud 同期を入にした場合は、ご自身の iCloud にも）に保存され、開発者が見ることはできません。
 アカウント登録もサインインも要りません。
 
 ## 関連する記事
